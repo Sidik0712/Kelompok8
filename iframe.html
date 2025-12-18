@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Video Wisata — CEDASIHoliday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header style="display:flex;justify-content:space-between;align-items:center;">
+      <h3 style="margin:0">CEDASIHoliday — iframe.html</h3>
+      <div style="text-align:right;">
+        <div id="currentDate" style="font-size:0.85rem"></div>
+        <button id="themeToggle" class="btn">🌙 Gelap</button>
+      </div>
+    </header>
+  </div>
+
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo">SH</div>
+        <div class="site-title">
+          <h1>Video Wisata</h1>
+          <p>Embedded YouTube & Offline</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="bullet.html">Destinasi</a></li>
+          <li><a href="table.html">Biaya</a></li>
+          <li><a href="frame.html">Galeri (frame)</a></li>
+          <li><a href="iframe.html">Video</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="card">
+      <h2>Video Tempat Wisata</h2>
+
+      <div style="display:grid; grid-template-columns:1fr; gap:16px">
+
+        <!-- VIDEO YOUTUBE PUBLIK 1 (SINGLE VIDEO ONLY) -->
+        <figure class="embed-container" aria-label="YouTube video">
+          <!-- Placeholder for YouTube IFrame API (JS will create the player) -->
+          <div id="youtube-player-1" role="region" aria-label="YouTube video: Nature Relaxation"></div>
+
+          <!-- Fallback UI shown when embedding is blocked or an error occurs -->
+          <div id="youtube-fallback-1" class="embed-fallback" style="display:none;">
+            <img src="https://img.youtube.com/vi/eEul5DUjkBc/hqdefault.jpg" alt="Thumbnail Nature Relaxation" />
+            <div class="fallback-text">
+              <p>Video tidak dapat diputar di embed ini. <a href="https://www.youtube.com/watch?v=eEul5DUjkBc" target="_blank" rel="noopener noreferrer" class="btn">Buka di YouTube</a></p>
+              <p class="reason" aria-live="polite" style="font-size:0.9rem;color:var(--text);opacity:0.85"></p>
+            </div>
+          </div>
+
+          <figcaption class="visually-hidden">Video YouTube: Nature Relaxation</figcaption>
+
+          <!-- Non-JS fallback: simple iframe + link -->
+          <noscript>
+            <iframe src="https://www.youtube.com/embed/eEul5DUjkBc" title="Nature Relaxation — CEDASIHoliday" allowfullscreen></iframe>
+            <p class="note">Jika video tidak muncul, <a href="https://www.youtube.com/watch?v=eEul5DUjkBc" target="_blank" rel="noopener noreferrer">buka di YouTube</a>.</p>
+          </noscript>
+        </figure>
+
+      </div>
+
+      <p style="margin-top:12px">
+        <a class="btn" href="index.html">Kembali</a>
+      </p>
+    </section>
+
+    <footer>© CEDASIHoliday</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

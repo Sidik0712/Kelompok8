@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Galeri Frame — CEDASIHoliday</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header style="display:flex;justify-content:space-between;align-items:center;">
+      <h3 style="margin:0">CEDASIHoliday</h3>
+      <div style="text-align:right;">
+        <div id="currentDate" style="font-size:0.85rem"></div>
+        <button id="themeToggle" class="btn">🌙 Gelap</button>
+      </div>
+    </header>
+  </div>
+
+  <div class="container">
+    <header class="site-header" style="margin-bottom:14px">
+      <div class="brand">
+        <div class="logo">SH</div>
+        <div class="site-title"><h1>Galeri (Frame)</h1><p>Contoh penggunaan frame</p></div>
+      </div>
+      <nav class="main-nav"><ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="bullet.html">Destinasi</a></li>
+        <li><a href="table.html">Biaya</a></li>
+        <li><a href="frame.html">Galeri (frame)</a></li>
+        <li><a href="iframe.html">Video</a></li>
+      </ul></nav>
+    </header>
+
+    <p class="card">Catatan: Berikut salah foto destinasi wisata yang ada di Bali & Raja Ampat </p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <figure class="embed-container">
+        <iframe src="pantai1.html" title="Pantai 1 — Galeri" loading="lazy" referrerpolicy="no-referrer"></iframe>
+      </figure>
+      <figure class="embed-container">
+        <iframe src="pantai2.html" title="Pantai 2 — Galeri" loading="lazy" referrerpolicy="no-referrer"></iframe>
+      </figure>
+      <figure class="embed-container">
+        <iframe src="pantai3.html" title="Pantai 3 — Galeri" loading="lazy" referrerpolicy="no-referrer"></iframe>
+      </figure>
+      <figure class="embed-container">
+        <iframe src="pantai4.html" title="Pantai 4 — Galeri" loading="lazy" referrerpolicy="no-referrer"></iframe>
+      </figure>
+      <figure class="embed-container">
+        <iframe src="pantai5.html" title="Pantai 5 — Galeri" loading="lazy" referrerpolicy="no-referrer"></iframe>
+      </figure>
+      <figure class="embed-container">
+        <iframe src="pantai6.html" title="Pantai 6 — Galeri" loading="lazy" referrerpolicy="no-referrer"></iframe>
+      </figure>
+    </div>
+
+    <p style="margin-top:12px"><a class="btn" href="index.html">Kembali</a></p>
+
+    <footer style="margin-top:18px">© CEDASIHoliday</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

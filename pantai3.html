@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Pantai 2</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+    }
+
+    /* Gambar full screen */
+    img {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border: none;
+      margin: 0;
+      transition: transform 0.4s ease;
+      z-index: 1;
+    }
+
+    /* Efek zoom halus saat hover */
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Tambahan teks judul di atas */
+    h3 {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      color: white;
+      font-size: 22px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      z-index: 2;
+    }
+
+    /* Nama / keterangan di bawah foto */
+    .caption {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold; /* Membuat teks tebal */
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <h3></h3>
+  <img src="Labuan Bajo.jpg" alt="Pantai">
+  <div class="caption">LABUAN BAJO</div>
+
+</body>
+</html>
